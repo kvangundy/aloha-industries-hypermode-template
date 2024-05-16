@@ -37,10 +37,6 @@ export function getMultipleClassificationLabels(
   // This model name should match one defined in the hypermode.json manifest file.
 const modelName: string = "my-custom-embedding";
 
-// This function takes input text and returns the vector embedding for that text.
-export function testEmbedding(text: string): f64[] {
-  return inference.getTextEmbedding(modelName, text);
-}
 
 // This function is similar to the previous, but allows multiple vector embeddings
 // to be calculated at a time.
@@ -77,4 +73,4 @@ class EmbeddingObject {
   text!: string;
   embedding!: f64[];
 }
-}
+}}
